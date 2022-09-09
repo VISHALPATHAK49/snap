@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+.Navbar{
+  display:flex;
+  align-items: center;
+  font-family: 'Epilogue', sans-serif !important;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 25px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  text-decoration: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Navbar a:hover{
+  text-decoration: underline black 2px solid;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo{
+  height: 30px;
+  width: 10%;
+}
+.nav-links{
+  width: 25%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-links a{
+  text-decoration: none;
+  font-weight:600;
+  color: hsl(0, 0%, 41%);
+  font-size: 14px;
+}
+.login {
+  font-size:14px;
+  font-weight:600 !important;
+  display:flex;
+  align-items: center;
+  justify-content: space-between !important;
+}
+.login a{
+  color: hsl(0, 0%, 41%) !important;
+  margin-right: 10px;
+}
+.signup{
+  font-size:14px !important;
+  font-weight:600 !important;
+  text-transform: inherit!important;
+  color: hsl(0, 0%, 41%) !important;
+}
+.content{
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+}
+.left-content{
+  width: 50%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  padding: 30px;
 }
-
-.App-link {
-  color: #61dafb;
+.left-content h1{
+  font-family: 'Epilogue', sans-serif !important;
+  font-size:56px;
+  font-weight: 900;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-content h1 span{
+  text-decoration:underline 5px solid aquamarine;
+}
+.left-text{
+  width: 55%;
+  font-family: 'Epilogue', sans-serif !important;
+  color: hsl(0, 0%, 41%);
+  padding-top: 5px;
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.btn{
+  background-color: black!important;
+  border-radius: 8px !important;
+  font-family: 'Epilogue', sans-serif !important;
+  font-weight: 500 !important;
+  transform: translateX(-120px);
+}
+.client-images{
+  padding: 20px;
+  display: flex;
+  width: 65%;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10px;
+}
+.client{
+  width: 25%;
+  padding: 25px;
+}
+.right-content{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero{
+  width: 65%;
+  margin-top:30px;
+  height: auto;
 }
